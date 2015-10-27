@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body body ng-app="landing" ng-controller="productosCtrl">
+
+	<head>
+		
+	</head>
+
+	<section class="slide">
+		
+	</section>
+
+	<section class="container-fluid">
+		<div class="col-md-3" ng-repeat="product in productos">
+			<div class="producto">
+				<figure></figure>
+				<h2>{{ product.nombre }}</h2>
+				<a href="">Comprar</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid">
+		<h2>Suscribete y obtén inspiración, diseños y ofertas exclusivas</h2>
+	</section>
+
+	<section class="container-fluid">
+		<form action="">
+			<input type="text">
+			<input type="submit">
+		</form>
+	</section>
+
+	<footer class="container-fluid"> 
+		Copyright © 2015 E-Manager S.A.S All rights reserved
+	</footer>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="js/c-app.js"></script>
+</body>
+</html>
