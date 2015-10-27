@@ -8,8 +8,32 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 </head>
-<body body ng-app="landing" ng-controller="productosCtrl">
+<body ng-app="landing" ng-controller="productosCtrl">
 
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Nombre Producto</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form action="">
+	        	<input type="text" placeholder="Nombre">
+	        	<input type="email" placeholder="Email">
+	        	<input type="tel" placeholder="Telefono">
+	        	<input type="text" placeholder="Ciudad">
+	        	<textarea name="" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<head>
 		
 	</head>
@@ -23,7 +47,9 @@
 			<div class="producto">
 				<figure></figure>
 				<h2>{{ product.nombre }}</h2>
-				<a href="">Comprar</a>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+					Comprar
+				</button>
 			</div>
 		</div>
 	</section>
