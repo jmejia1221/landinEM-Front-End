@@ -25,11 +25,11 @@
 	        	<input type="tel" placeholder="Telefono">
 	        	<input type="text" placeholder="Ciudad">
 	        	<textarea name="" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
+	        	<input type="submit" class="btn btn-primary" value="Enviar">
 	        </form>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
 	      </div>
 	    </div>
 	  </div>
@@ -45,7 +45,9 @@
 	<section class="container-fluid">
 		<div class="col-md-3" ng-repeat="product in productos">
 			<div class="producto">
-				<figure></figure>
+				<figure>
+					<img src="images/{{product.imagen}}" height="200" width="200">
+				</figure>
 				<h2>{{ product.nombre }}</h2>
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 					Comprar
