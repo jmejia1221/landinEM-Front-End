@@ -16,67 +16,84 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Nombre Producto</h4>
+	        <h4 class="modal-title text-center color-primary" id="myModalLabel">Cotiza tu producto y en un máximo de 24 Horas nos pondremos en contacto con usted.</h4>
 	      </div>
 	      <div class="modal-body">
-	        <form action="">
+	        <form action="" class="form-modal">
 	        	<input id="nombre" type="text" placeholder="Nombre">
 	        	<input id="email" type="email" placeholder="Email">
 	        	<input id="telefono" type="tel" placeholder="Telefono">
 	        	<input id="ciudad" type="text" placeholder="Ciudad">
+	        	<input id="cantidad" type="number" placeholder="Cantidad">
+	        	<select name="" id="producto">
+	        		<option value="" ng-repeat="productos in productos"> {{ productos.nombre }} </option>
+	        	</select>
 	        	<textarea id="mensaje" name="" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
 	        	<input id="envio" type="submit" class="btn btn-primary" value="Enviar">
 	        </form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	<header class="container">
-		<figure class="logo">
+		<figure class="logo pull-left">
 			<img src="images/logo.png" alt="">
 		</figure>
+		<a class="pull-right" href="http://e-manager.com.co">Go E-Manager</a>
 	</header>
 
 	<section class="slide container-fluid">
 		<figure>
-			<img src="images/header.jpg" alt="">
-			<h1>CREA UN NUEVO MUNDO <br>MATERIALIZANDO TUS IDEAS</h1>
+			<h1 class="text-center color-white">CREA UN NUEVO MUNDO <br>MATERIALIZANDO TUS IDEAS</h1>
 			<figcaption>
-				<p>Selecciona un producto cotizalo y en un máximo de 24 horas nos pondremos en contacto con usted.</p>
+				<p class="text-center color-white">Selecciona un producto cotizalo y en un máximo de 24 horas nos pondremos en contacto con usted.</p>
 			</figcaption>
 		</figure>
 	</section>
 
-	<section class="container-fluid">
+	<section class="container-fluid content-products">
 		<div class="col-md-3" ng-repeat="product in productos">
 			<div class="producto">
 				<figure>
 					<img src="images/{{product.imagen}}" height="200" width="200">
 				</figure>
-				<h2>{{ product.nombre }}</h2>
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				<h3 class="text-center color-primary">{{ product.nombre }}</h3>
+				<button type="button" class="btn-comprar btn-lg" data-toggle="modal" data-target="#myModal">
 					Comprar
 				</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="container-fluid">
-		<h2>Suscribete y obtén inspiración, diseños y ofertas exclusivas</h2>
+	<section class="container-fluid share">
+		<h1 class="text-center color-primary">#DecideEvoluciona</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<a href="http://www.facebook.com/sharer.php?s=100&p[url]=url_contenido&p[title]=titulo_compartido&p[summary]=descripcion&p[images][0]=thumbnail_image_url" target="_top" class="btn-facebook btn-share">Compartir en Facebook</a>
+			</div>
+			<div class="col-md-6">
+				<a href="https://twitter.com/intent/tweet?text=Hello%20world" class="btn-twitter btn-share">Compartir en Twitter</a>
+			</div>
+		</div>
 	</section>
 
-	<section class="container-fluid">
-		<form action="">
-			<input type="text">
-			<input type="submit">
+	<section class="container-fluid suscribirse">
+		<h2 class="text-center color-primary">Suscribete y obtén inspiración, diseños y ofertas exclusivas</h2>
+		<form action="" class="container">
+			<div class="row">	
+				<div class="col-md-7 col-md-offset-1">
+					<input placeholder="TU EMAIL" class="input-text" type="text">
+				</div>
+				<div class="col-md-3">
+					<input class="btn-suscribirse" type="submit" value="Suscribirme">
+				</div>
+			</div>
 		</form>
 	</section>
 
-	<footer class="container-fluid"> 
-		Copyright © 2015 E-Manager S.A.S All rights reserved
+	<footer class="container"> 
+		<p class="pull-left">Copyright © 2015 E-Manager S.A.S All rights reserved</p>
+		<a class="pull-right" href="http://e-manager.com.co">Go E-Manager</a>
 	</footer>
 
 	</div>
