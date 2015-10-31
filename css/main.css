@@ -1,8 +1,16 @@
-body{
+body {
 	background-color: #f8f8f8;
 }
 
-.producto{
+figure > img {
+	width: 100%;
+}
+
+.logo{
+	width: 110px;
+}
+
+.producto {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 5px;
