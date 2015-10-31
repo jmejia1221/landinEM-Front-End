@@ -5,17 +5,29 @@ $(document).ready(function(){
     	var em = document.getElementById("email").value;
     	var ciu = document.getElementById("ciudad").value;
     	var men = document.getElementById("mensaje").value;
-        $.post("../../landingemanager/php/setcliente.php",
+      $.post("../../landingemanager/php/setcliente.php",
+      {
+        nombre: nom,
+        telefono: tel,
+        email: em,
+        ciudad: ciu,
+        mensaje: men
+      },
+      function(data,status){
+        console.log(data);
+        console.log(status);
+      });
+    });
+    
+    $('#suscribirse').click(function(){
+      var correo = document.getElementById("correo").value;
+      $.post("../../landingemanager/php/sendmail.php",
         {
-          nombre: nom,
-          telefono: tel,
-          email: em,
-          ciudad: ciu,
-          mensaje: men
+          mail: correo
         },
-        function(data,status){
-            console.log(data);
-            console.log(status);
+        function(data, status) {
+          console.log(data);
+          console.log(status);
         });
     });
 });
