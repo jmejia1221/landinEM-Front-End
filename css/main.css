@@ -6,45 +6,45 @@ figure > img {
 	width: 100%;
 }
 
-footer{
+footer {
 	padding: 35px 0 30px;
 }
 
-.form-modal input{
+.form-modal input {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
 }
 
-.form-modal textarea{
+.form-modal textarea {
 	width: 100%;
 	padding: 10px;
 }
 
-.form-modal select{
+.form-modal select {
 	width: 100%;
 	padding: 10px;
 	display: block;
 	margin-bottom: 10px;
 }
 
-.color-primary{
+.color-primary {
 	color: #0D4465;
 }
 
-.color-secondary{
+.color-secondary {
 	color: #42CAF3;
 }
 
-.color-white{
+.color-white {
 	color: #fff;
 }
 
-.logo{
+.logo {
 	width: 110px;
 }
 
-.slide{
+.slide {
 	padding: 70px 0 0;
 	background-image: url(../images/header.jpg);
 	background-repeat: no-repeat;
@@ -52,18 +52,18 @@ footer{
 	background-position: center;
 }
 
-.slide figure h1{
+.slide figure h1 {
 	font-size: 3.5em;
 	margin-bottom: 80px;
 }
 
-.slide figcaption{
+.slide figcaption {
 	padding: 25px 0 20px;
 	display: block;
 	background-color: #0D4465;
 }
 
-.content-products{
+.content-products {
 	padding: 40px 0 20px;
 }
 
@@ -75,11 +75,11 @@ footer{
 	margin-top: 10px;
 }
 
-.producto h3{
+.producto h3 {
 	text-transform: uppercase;
 }
 
-.btn-comprar{
+.btn-comprar {
 	color: #fff;
 	border: 0;
 	display: block;
@@ -88,18 +88,18 @@ footer{
 	border-bottom: 4px solid #0D4465;
 }
 
-.suscribirse form{
+.suscribirse form {
 	margin-top: 25px;
 }
 
-.input-text{
+.input-text {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 11px 10px;
 	width: 100%;
 }
 
-.btn-suscribirse{
+.btn-suscribirse {
 	color: #fff;
 	border: 0;
 	display: block;
@@ -110,16 +110,16 @@ footer{
 	border-bottom: 4px solid #0D4465;
 }
 
-.share{
+.share {
 	margin: 50px 0;
 	display: block;
 }
 
-.share h1{
+.share h1 {
 	margin: 10px 0 50px;
 }
 
-.btn-share{
+.btn-share { 
 	color: #fff;
 	padding: 20px;
 	font-size: 1.7em;
@@ -130,17 +130,17 @@ footer{
 	width: 350px;
 }
 
-.btn-facebook{
+.btn-facebook {
 	background-color: #2C4389;
 	border-bottom: 4px solid #1D346D;
 }
 
-.btn-twitter{
+.btn-twitter {
 	background-color: #2899DA;
 	border-bottom: 4px solid #146893;
 }
 
-.suscribirse{
+.suscribirse {
 	margin-top: 30px;
 	background-color: #fff;
 	border: 1px solid #ccc;

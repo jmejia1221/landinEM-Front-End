@@ -20,15 +20,22 @@
 	      </div>
 	      <div class="modal-body">
 	        <form action="" class="form-modal">
-	        	<input id="nombre" type="text" placeholder="Nombre">
-	        	<input id="email" type="email" placeholder="Email">
-	        	<input id="telefono" type="tel" placeholder="Telefono">
-	        	<input id="ciudad" type="text" placeholder="Ciudad">
-	        	<input id="cantidad" type="number" placeholder="Cantidad">
-	        	<select name="" id="producto">
-	        		<option value="" ng-repeat="productos in productos"> {{ productos.nombre }} </option>
-	        	</select>
-	        	<textarea id="mensaje" name="" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<input id="nombre" type="text" placeholder="Nombre" required>
+			        	<input id="email" type="email" placeholder="Email" required>
+			        	<input id="telefono" type="tel" placeholder="Telefono" required>
+	        		</div>
+	        		<div class="col-md-6">
+	        			<input id="ciudad" type="text" placeholder="Ciudad">
+			        	<input id="cantidad" type="number" min="0" placeholder="Cantidad" required>
+			        	<label for="producto">Seleccione el Producto a cotizar</label>
+			        	<select name="" id="producto">
+			        		<option value="" ng-repeat="productos in productos"> {{ productos.nombre }} </option>
+			        	</select>
+	        		</div>
+	        	</div>	        	
+	        	<textarea id="mensaje" name="" placeholder="Mensaje" id="" cols="30" rows="5"></textarea>
 	        	<input id="envio" type="submit" class="btn btn-primary" value="Enviar">
 	        </form>
 	      </div>
@@ -46,7 +53,7 @@
 		<figure>
 			<h1 class="text-center color-white">CREA UN NUEVO MUNDO <br>MATERIALIZANDO TUS IDEAS</h1>
 			<figcaption>
-				<p class="text-center color-white">Selecciona un producto cotizalo y en un máximo de 24 horas nos pondremos en contacto con usted.</p>
+				<h5 class="text-center color-white">Selecciona un producto cotizalo y en un máximo de 24 horas nos pondremos en contacto con usted.</h5>
 			</figcaption>
 		</figure>
 	</section>
